@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+    </head>
+    <body style="background-color:powderblue;">
+        <center>
+            <h1> STUDENT REGISTRATION FORM </h1>
+            <form>
+                <label for="firstname"> FIRST NAME </label>
+                <input type="text" id="firstname" required placeholder="Enter characters a-z & A-Z" autocomplete="on" maxlength="30">
+            </form>
+            <br>
+            <form>
+                <label for="lastname"> LAST NAME </label>
+                <input type="text" id="lastname" required placeholder="Enter characters a-z & A-Z" autocomplete="on" maxlength="30">
+            </form>
+            <br>
+            <form>
+                <label for="dob"> DATE OF BIRTH </label>
+                <input type="date" id="dob" required>
+            </form>
+            <br>
+            <form>
+                <label for="email"> EMAIL ID </label>
+                <input type="email" id="email" placeholder="example@domain.com" required autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="phone"> PHONE NUMBER </label>
+                <input type="number" id="phone" placeholder="10 digit number" required maxlength="10" autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="gender"> GENDER </label>
+                <select>
+                    <option> Male </option>
+                    <option> Female </option>
+                </select>
+            </form>
+            <br>
+            <form>
+                <label for="address"> ADDRESS </label>
+                <input type="text" id="address" placeholder="Enter your address" required autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="city"> CITY </label>
+                <input type="text" id="city" placeholder="Enter characters a-z & A-Z" maxlength="30" required autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="pincode"> PINCODE </label>
+                <input type="text" id="pincode" placeholder="6 digit number" required maxlength="6" autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="state"> STATE </label>
+                <input type="text" id="state" placeholder="Enter characters a-z & A-Z" maxlength="30" required autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="country"> COUNTRY </label>
+                <input type="text" id="country" placeholder="Enter your country" required autocomplete="on">
+            </form>
+            <br>
+            <form>
+                <label for="hobbies"> HOBBIES </label>
+                <select>
+                    <option> Drawing </option>
+                    <option> Singing </option>
+                    <option> Dancing </option>
+                    <option> Sketching </option>
+                    <option> Others </option>
+                </select>
+            </form>
+            <br>
+            <p> QUALIFICATION </p>
+            <table border="1px">
+                <tr>
+                    <th> S.NO </th>
+                    <th> Examination </th>
+                    <th colspan="2"> Borad </th>
+                    <th> Percentage </th>
+                    <th> Year of Passing </th>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> Class X </td>
+                    <td colspan="2"> <input type="text" name="board1"> </td>
+                    <td> <input type="text" name="percentage1"> </td>
+                    <td> <input type="year" name="year1"> </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> Class XII </td>
+                    <td colspan="2"> <input type="text" name="board2"> </td>
+                    <td> <input type="text" name="percentage2"> </td>
+                    <td> <input type="year" name="year2"> </td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> Graduation </td>
+                    <td colspan="2"> <input type="text" name="board3"> </td>
+                    <td> <input type="text" name="percentage3"> </td>
+                    <td> <input type="year" name="year3"> </td>
+                </tr>
+                <tr>
+                    <td> 4 </td>
+                    <td> Masters </td>
+                    <td colspan="2"> <input type="text" name="board4"> </td>
+                    <td> <input type="text" name="percentage4"> </td>
+                    <td> <input type="year" name="year4"> </td>
+                </tr>
+            </table>
+            <br>
+            <form>
+                <label for="course"> COURSES APPLIED FOR </label>
+                <select>
+                    <option> BCA </option>
+                    <option> B.Com </option>
+                    <option> B.Sc </option>
+                    <option> B.A </option>
+                </select>
+            </form>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </center>
+    </body>
+</html>

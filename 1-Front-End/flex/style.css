@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+center h1 {
+    color:indianred;
+    text-shadow: 1px 2px #FFFFFF;
+}
+center p {
+    color:darkgrey;
+    text-shadow: 1px 1px #FFFFFF;
+}
+.outerdiv {
+    background-color: #00d5ff;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.innerdiv {
+    color: black;
+    position: relative;
+}
+.innerdiv::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 0%;
+    background-color: aquamarine;
+    width: 0%;
+    transition: width .5s;
+}
+.innerdiv:hover::after {
+    color:black;
+    width: 100%;
+}
