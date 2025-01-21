@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Str {
+public class StringMethods {
     public static void main(String[] args) {
         // .length()
         String str = "Rahul Karthick";
