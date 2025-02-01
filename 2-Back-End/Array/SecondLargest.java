@@ -3,27 +3,28 @@ import java.util.Scanner;
 public class SecondLargest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size of the array: ");
-        int n = sc.nextInt();
-        if (n < 2) {
-            System.out.println("Array must have at least two elements.");
+        System.out.println("Enter the size of the array:");
+        int num = sc.nextInt();
+        int[] arr = new int[num];
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < num; i++) {
+            arr[i] = sc.nextInt();
         }
-        int[] array = new int[n];
-        System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
-            array[i] = sc.nextInt();
-        }
-        int largest = array[0];
-        int secondLargest = -1;
-        for (int i = 1; i < n; i++) {
-            if (array[i] > largest) {
-                secondLargest = largest;
-                largest = array[i];
-            } else if (array[i] < largest && (secondLargest == -1 || array[i] > secondLargest)) {
-                secondLargest = array[i];
+        int max = arr[0];
+        for (int j = 0; j < num; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
             }
         }
-        System.out.println("Second largest element in the array: " + secondLargest);
+        int temp = max;
+        int dummy = -1;
+        System.out.println("First Largest element in the array:" + max);
+        for (int k = 0; k < num; k++) {
+            if (dummy < arr[k] && temp > arr[k]) {
+                dummy = arr[k];
+            }
+        }
+        System.out.println("Second Largest element in  the array:" + dummy);
         sc.close();
     }
 }
