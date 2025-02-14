@@ -10,7 +10,7 @@ public class LinkList {
         l.add("Four");
         Iterator li = l.descendingIterator(); // This method is used only with LinkedList
         while (li.hasNext()) {
-            System.out.println(" Reverse printing using .descendingIterator(); " + li.next());
+            System.out.println(" Reverse printing using .descendingIterator(): " + li.next());
         }
     }
 }
