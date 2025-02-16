@@ -1,7 +1,6 @@
-// Outer class
-
 import java.util.Scanner;
 
+// Outer class
 public class InnerCls {
     private int balance;
 
