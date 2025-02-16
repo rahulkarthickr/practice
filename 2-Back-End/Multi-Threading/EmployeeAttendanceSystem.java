@@ -174,7 +174,7 @@ public class EmployeeAttendanceSystem {
             int id;
             while (true) {
                 try {
-                    System.out.println("Enter the employee id:");
+                    System.out.println("Enter the employee ID:");
                     id = sc.nextInt();
                     sc.nextLine();
                     break;
