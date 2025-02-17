@@ -40,7 +40,7 @@ class Employee {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        // Typecsting newEmployee object to Employee class
+        // Typecasting newEmployee object to Employee class
         // And asssigning it to emp object
         Employee emp = (Employee) obj;
         // Checks if private id and name equals to emp object values
