@@ -1,4 +1,4 @@
-public class AnonymousInnerCls {
+public class Anonymous {
     void demo() {
         System.out.println("normal method");
     }
@@ -6,7 +6,7 @@ public class AnonymousInnerCls {
     public static void main(String[] args) {
         // Anonymous Inner Class Extending AnonymousInnerCls
         // It does not create a new named subclass but rather an inline subclass
-        AnonymousInnerCls ob = new AnonymousInnerCls() {
+        Anonymous ob = new Anonymous() {
             // This anonymous inner class overrides the demo() method
             void demo() {
                 System.out.println("demo method");
