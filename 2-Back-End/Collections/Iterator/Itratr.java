@@ -8,9 +8,9 @@ public class Itratr {
         ob.add(30);
         ob.add(40);
         System.out.println("Before while:" + ob);
-        Iterator i = ob.iterator();
+        Iterator<Integer> i = ob.iterator();
         while (i.hasNext()) {
-            Integer a = (Integer) i.next();
+            Integer a = i.next();
             if (a.equals(20)) {
                 i.remove();
             }
