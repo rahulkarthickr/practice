@@ -7,7 +7,7 @@ public class Sequence {
         System.out.print("Enter the number of elements: ");
         int n = sc.nextInt();
         HashSet<Integer> set = new HashSet<>();
-        System.out.println("Enter the elements: ");
+        System.out.println("Enter the elements:");
         for (int i = 0; i < n; i++) {
             set.add(sc.nextInt());
         }
