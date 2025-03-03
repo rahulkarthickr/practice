@@ -1,6 +1,6 @@
 class UserLimitException extends Exception {
     UserLimitException(String s) {
-        super();
+        super(s);
     }
 }
 
